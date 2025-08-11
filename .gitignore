@@ -1,0 +1,8 @@
+.venv
+__pycache__
+.env
+data_raw/img/*
+data_raw/video/*
+*/.env
+*/__pycache__
+poses/model/*
