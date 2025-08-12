@@ -1,5 +1,4 @@
 import cv2
-import os
 from pathlib import Path
 import logging
 from tqdm import tqdm
@@ -40,7 +39,9 @@ def extract_frames(video_path: str, output_dir: str, image_format: str = 'jpg') 
     logging.info(f"Extracción completada. Frames guardados en: {output_dir}")
 
 
-FOLDER_VIDEO = "./data_raw/video"
-FOLDER_IMG = "./data_raw/img"
+OBJECTO = "pruebas"
 
-extract_frames(f"{FOLDER_VIDEO}/20k.mp4", f"{FOLDER_IMG}/20k", image_format="jpg")
+FOLDER_VIDEO = f"./data_raw/video/{OBJECTO}"
+FOLDER_IMG = f"./data_raw/img/{OBJECTO}"
+
+extract_frames(f"{FOLDER_VIDEO}/{OBJECTO}.mp4", f"{FOLDER_IMG}/{OBJECTO}", image_format="jpg")

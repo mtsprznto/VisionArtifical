@@ -1,0 +1,7 @@
+ultralytics
+python-dotenv
+inference-cli
+inference
+inference-sdk
+opencv-python
+tqdm
